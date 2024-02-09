@@ -1,6 +1,4 @@
 .child{
-  max-width: auto;
-  margin: auto;
   position:absolute;
   left:50%;
   top:50%;
@@ -11,6 +9,7 @@
   
 }
 .child > div{
+  width: auto;
   text-align: center;
   margin: 40px 50px;
   color: white;
