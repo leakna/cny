@@ -6,4 +6,5 @@ body{
   background-size: cover;
   overflow-x: hidden;
   height: 100%;
+  white-space: nowrap;
 }
