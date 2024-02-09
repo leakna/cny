@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinese New Year</title>
+  <link rel="stylesheet" href="style/home.css">
+  <link rel="stylesheet" href="style/background.css">
+</head>
+<body>
+  <div class="child">
+    <h2>Happy Chinese New Year!</h2>
+    <img class="img" src="asset/aba.jpg" alt="">
+    <button onclick="moveChild()">Done</button>
+  </div>
+  <script>
+    function moveChild() {
+      var childDiv = document.querySelector('.child');
+      
+      // Add the 'move-right' class to initiate the animation
+      childDiv.classList.add('move-right');
+
+      // Listen for the 'transitionend' event to remove the element after the animation is complete
+      childDiv.addEventListener('transitionend', function() {
+        childDiv.remove();
+        window.location.href = 'html/next.html';
+      });
+    }
+  </script>
+</body>
+</html>git init

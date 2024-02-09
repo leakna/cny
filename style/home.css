@@ -1,0 +1,58 @@
+.child{
+  position:absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 1s ease;
+  overflow-x: hidden;
+
+
+}
+.child > h2{
+  color:white;
+}
+.child.move-right {
+  transform: translateX(100%); /* Move to the right */
+}
+.img{
+  width: 300px;
+  display: block;
+  border-radius: 25px;
+  animation-name: move;
+  animation-duration: 1s;
+  position: relative;
+  
+}
+.child > button{
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  background-image: url(../asset/forbutton.jpg);
+  background-position: bottom;
+  background-size:cover;
+  
+  
+  
+}
+.child > button:hover{
+
+  background-image: url(../asset/forHover.jpg);
+  background-position: top;
+  background-size: cover;
+}
+@keyframes move{
+  from{
+    left: 100%;
+  }
+  to{
+    left:0
+  }
+}

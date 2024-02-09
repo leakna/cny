@@ -1,0 +1,27 @@
+.child{
+  max-width: auto;
+  margin: auto;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation-name: animate; 
+  animation-duration: 1s;
+  
+}
+.child > div{
+  text-align: center;
+  margin: 40px 50px;
+  color: white;
+  text-wrap: nowrap;
+  
+}
+@keyframes animate{
+  from{
+    left:-100%
+  }
+  to{
+
+  }
+}
